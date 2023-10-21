@@ -1,4 +1,4 @@
-const app = require("./app")
+
 const dotenv = require('dotenv');
 
 
@@ -11,7 +11,7 @@ if (process.env.NODE_ENV === 'production') {
 
 const connectDatabase = require('./config/dbconfig')
 
-
+const app = require("./app")
 
 connectDatabase();
 
