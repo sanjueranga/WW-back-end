@@ -1,6 +1,14 @@
 const app = require("./app")
 const dotenv = require('dotenv');
-dotenv.config();
+
+
+// Load environment variables based on NODE_ENV
+if (process.env.NODE_ENV === 'production') {
+  dotenv.config({ path: '.env.prod' });
+} else {
+  dotenv.config({ path: '.env.dev' });
+}
+
 const connectDatabase = require('./config/dbconfig')
 
 

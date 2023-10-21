@@ -2,10 +2,14 @@
   "name": "backend",
   "version": "1.0.0",
   "description": "whellness-wheel project",
-  "main": "index.js",
+  "main": "server.js",
   "scripts": {
+    "start": "node index.js", 
+    "dev": "NODE_ENV=development nodemon -r dotenv/config server.js",
+    "prod": "NODE_ENV=production nodemon -r dotenv/config server.js",
     "test": "echo \"Error: no test specified\" && exit 1"
-  },
+  }
+  ,
   "repository": {
     "type": "git",
     "url": "git+https://github.com/sanjueranga/WW-back-end.git"
