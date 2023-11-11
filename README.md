@@ -1,2 +1,2 @@
 # WW-back-end
-Backend api for Wellness wheel project, UOP
+Using google auth with passport js
